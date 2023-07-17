@@ -8,7 +8,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -57,10 +58,24 @@ body{
        margin-top: -20px;
        background-color: hsl(150, 100%, 66%);
      }
+     .dice-roller button{
+        border: none;
+        background: none;
+     }
     .dice-roller i{
        color: black;
        font-size: 20px;
     }
+    .dice-button:focus {
+  outline: none;
+}
+.or-text{
+  color:hsl(193, 38%, 86%);
+}
+
+.advice-number{
+  color: hsl(150, 100%, 66%) !important;
+}
     @media screen and (min-width: 1200px),  (min-width: 992px), (min-width: 768px){
         .generator-container{
         width: 40vw;
